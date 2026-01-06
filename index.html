@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>KennieDecor | Luxurious Minimalist Interior Design</title>
+    <meta name="description"
+        content="KennieDecor - Redefining spaces with modern elegance. We specialize in luxurious, minimalist interior styling, exterior facades, and expert design consultation.">
+    <meta name="keywords"
+        content="interior design, minimalist, luxury home, exterior design, home renovation, KennieDecor">
+    <meta property="og:title" content="KennieDecor | Luxurious Minimalist Interior Design">
+    <meta property="og:description"
+        content="Redefining Your Space, Inside and Out. Experience the art of luxurious, minimalist living.">
+    <meta property="og:image"
+        content="https://lh3.googleusercontent.com/aida-public/AB6AXuCE0_w-dB1e9TdnsEsQZ6N4iG3ebTjVUe1oUrKhwLiEaRj4qKSLMigX9_nzBLMz4fIT5tobPRhwZqkG2bVfTE_lmp4IjLFPHAe1UzsevkOrJcXhVIP_v9P5HjBj6a1dXR_aPFXebk0ek2EylHFIIdIqS5_ZbTHw3YUzIu9q_cpoZJCVtR856RmGujxxpPAdDoO6dTJ8l7-5VdH_48wZSgoP4Jh4Yqjd8eU9qSuOhoTruMh6E3I4DlKscdAnI2OJdW778Tbc2LtXZvI">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7014cc",
+                        "accent": "#FFD700",
+                        "background-light": "#FFFFFF",
+                        "background-off-white": "#F8F8FA",
+                        "background-dark": "#191121",
+                        "surface-dark": "#2a1f36",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'glow': '0 0 15px rgba(112, 20, 204, 0.3)',
+                    }
+                },
+            },
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-[#140e1b] dark:text-[#f3f0f5] font-display overflow-x-hidden antialiased">
+    <div class="relative flex flex-col w-full min-h-screen">
+        <!-- Navigation -->
+        <header
+            class="sticky top-0 z-50 flex items-center justify-between border-b border-gray-100 dark:border-gray-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md px-6 py-4 lg:px-20">
+            <a href="index.html">
+                <img src="images/logo.png" alt="KennieDecor" class="h-12 w-auto object-contain rounded-lg">
+            </a>
+            <div class="hidden lg:flex items-center gap-10">
+                <a class="text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                    href="portfolio.html">Portfolio</a>
+                <a class="text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                    href="services.html">Services</a>
+                <a class="text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                    href="contact.html">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle"
+                    class="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+                    aria-label="Toggle Dark Mode">
+                    <span class="material-symbols-outlined dark:hidden">dark_mode</span>
+                    <span class="material-symbols-outlined hidden dark:block">light_mode</span>
+                </button>
+                <button
+                    class="hidden sm:flex h-10 px-6 items-center justify-center rounded-xl border border-primary text-primary dark:text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all duration-300"
+                    onclick="window.location.href='contact.html'">
+                    Get a Quote
+                </button>
+                <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-600 dark:text-gray-300"
+                    aria-label="Open Menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+            class="fixed inset-0 z-50 bg-white/95 dark:bg-background-dark/95 backdrop-blur-xl transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-center items-center gap-8">
+            <button id="close-menu-btn"
+                class="absolute top-6 right-6 p-2 text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+                aria-label="Close Menu">
+                <span class="material-symbols-outlined text-3xl">close</span>
+            </button>
+            <nav class="flex flex-col items-center gap-6 text-xl font-bold">
+                <a href="portfolio.html"
+                    class="mobile-link text-gray-800 dark:text-gray-100 hover:text-primary transition-colors">Portfolio</a>
+                <a href="#services"
+                    class="mobile-link text-gray-800 dark:text-gray-100 hover:text-primary transition-colors">Services</a>
+                <a href="contact.html"
+                    class="mobile-link text-gray-800 dark:text-gray-100 hover:text-primary transition-colors">Contact</a>
+            </nav>
+            <button
+                class="flex h-12 px-8 items-center justify-center rounded-xl bg-primary text-white font-bold text-lg hover:bg-primary/90 transition-all shadow-glow"
+                onclick="window.location.href='contact.html'; toggleMenu()">
+                Get a Quote
+            </button>
+        </div>
+        <!-- Hero Section -->
+        <section class="relative flex min-h-[85vh] w-full items-center justify-center overflow-hidden">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img alt="Luxurious modern minimalist living room interior with sunlight"
+                    class="h-full w-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE0_w-dB1e9TdnsEsQZ6N4iG3ebTjVUe1oUrKhwLiEaRj4qKSLMigX9_nzBLMz4fIT5tobPRhwZqkG2bVfTE_lmp4IjLFPHAe1UzsevkOrJcXhVIP_v9P5HjBj6a1dXR_aPFXebk0ek2EylHFIIdIqS5_ZbTHw3YUzIu9q_cpoZJCVtR856RmGujxxpPAdDoO6dTJ8l7-5VdH_48wZSgoP4Jh4Yqjd8eU9qSuOhoTruMh6E3I4DlKscdAnI2OJdW778Tbc2LtXZvI" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-black/40 to-black/10 dark:from-black/60 dark:to-black/30">
+                </div>
+            </div>
+            <!-- Content -->
+            <div
+                class="relative z-10 container mx-auto px-6 lg:px-20 flex flex-col items-center text-center gap-8 max-w-4xl">
+                <div class="flex flex-col gap-4 animate-fade-in-up">
+                    <h1
+                        class="hero-text-shadow text-white text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] tracking-tight reveal reveal-up">
+                        Redefining Your Space,<br />Inside and Out.
+                    </h1>
+                    <p
+                        class="hero-text-shadow text-white text-lg md:text-xl font-medium max-w-2xl mx-auto opacity-90 reveal reveal-up delay-200">
+                        Experience the art of luxurious, minimalist living with KennieDecor. We transform houses into
+                        dream homes.
+                    </p>
+                </div>
+                <button
+                    class="reveal reveal-scale delay-300 group relative flex items-center gap-3 h-14 px-10 rounded-full bg-accent text-gray-900 text-base font-bold shadow-[0_0_20px_rgba(255,215,0,0.4)] hover:shadow-[0_0_30px_rgba(255,215,0,0.6)] hover:scale-105 transition-all duration-300 mt-4"
+                    onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
+                    aria-label="Start Your Transformation">
+                    <span>Start Your Transformation</span>
+                    <span
+                        class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </button>
+            </div>
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/80">
+                <span class="material-symbols-outlined text-3xl">keyboard_arrow_down</span>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section id="services"
+            class="bg-background-off-white dark:bg-surface-dark py-20 lg:py-28 px-6 lg:px-20 scroll-mt-20">
+            <div class="container mx-auto max-w-6xl">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                    <div class="flex flex-col gap-3">
+                        <span class="text-primary font-bold tracking-widest uppercase text-sm">Our Expertise</span>
+                        <h2
+                            class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white leading-tight reveal reveal-left">
+                            Comprehensive design solutions <br class="hidden md:block" />tailored to your lifestyle.
+                        </h2>
+                    </div>
+                    <a class="text-primary font-bold hover:opacity-80 flex items-center gap-1 group" href="#">
+                        View All Services
+                        <span
+                            class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div
+                        class="group bg-white dark:bg-background-dark p-8 rounded-xl shadow-soft hover:shadow-lg transition-all duration-300 border border-transparent hover:border-primary/20 reveal reveal-up hover-lift">
+                        <div
+                            class="size-14 rounded-xl bg-primary/5 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                            <span class="material-symbols-outlined text-3xl">chair</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Interior Styling</h3>
+                        <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                            Curated furniture selection, color palettes, and layouts designed for modern, breathable
+                            living spaces.
+                        </p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div
+                        class="group bg-white dark:bg-background-dark p-8 rounded-xl shadow-soft hover:shadow-lg transition-all duration-300 border border-transparent hover:border-primary/20 reveal reveal-up delay-100 hover-lift">
+                        <div
+                            class="size-14 rounded-xl bg-primary/5 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                            <span class="material-symbols-outlined text-3xl">deck</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Exterior Facades</h3>
+                        <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                            Stunning curb appeal enhancements and outdoor living areas that make a lasting first
+                            impression.
+                        </p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div
+                        class="group bg-white dark:bg-background-dark p-8 rounded-xl shadow-soft hover:shadow-lg transition-all duration-300 border border-transparent hover:border-primary/20 reveal reveal-up delay-200 hover-lift">
+                        <div
+                            class="size-14 rounded-xl bg-primary/5 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                            <span class="material-symbols-outlined text-3xl">diversity_3</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3">Expert Consultation</h3>
+                        <p class="text-gray-500 dark:text-gray-400 leading-relaxed">
+                            One-on-one professional guidance to refine your vision and bring your dream project to life
+                            efficiently.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Recent Transformations Section -->
+        <section class="bg-background-light dark:bg-background-dark py-20 lg:py-28 px-6 lg:px-20">
+            <div class="container mx-auto max-w-6xl">
+                <div class="flex flex-col items-center text-center mb-16 gap-3">
+                    <span class="text-primary font-bold tracking-widest uppercase text-sm">Portfolio</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white reveal reveal-left">Recent
+                        Transformations</h2>
+                    <p class="text-gray-500 dark:text-gray-400 max-w-2xl reveal reveal-right delay-100">Witness the
+                        power of thoughtful design in our
+                        latest projects.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Transformation 1 -->
+                    <div class="group relative overflow-hidden rounded-2xl aspect-[16/10] reveal reveal-up">
+                        <img alt="Bright modern kitchen with white island and wood accents"
+                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl6c-j7cLU9CZYPRO2quM9Qy1aYy6AXTSH-NCCW9Am8Hf6gDE8eQCyAPzdNyeqp8vZGV88exi9WQBy3DE1aNx_4aPp7PYjs-UqolChdxr4OzFvl2GPS79T7cUyakZinufdgOqcK-kTxTvbt1gQBIymgKfVtpmWbovGcjRQG7L2VDEKmZJEoGLB3wV7_UnAuvjUS7FBJVnG2D5RiWbhEE1Ff5le5nBf-QqqyUx-LbGjORu8si39mKe0GyMUForEQVW9XmDGlxSSRns" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 transition-opacity duration-300">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <span
+                                class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-xs font-bold mb-3 border border-white/30">Interior</span>
+                            <h3 class="text-2xl font-bold text-white mb-1">The Modern Farmhouse Kitchen</h3>
+                            <p
+                                class="text-gray-200 text-sm line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
+                                A complete overhaul opening up the space for light and connection.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Transformation 2 -->
+                    <div class="group relative overflow-hidden rounded-2xl aspect-[16/10] reveal reveal-up delay-100">
+                        <img alt="Serene minimalist bedroom with large window and soft lighting"
+                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZCAg3SBV-Us485tXLqlRNbzP-G_WarqZqBbWM-Fefr2ykrkFlC_23APPjBSpAcRvpvUElt99y2kz7yz6RQM7nxqoeGP6yO8muR-6kQhh5UvDVZUY2Sr_o13p1fJ4kgeMx5DIf3rfTU2awH-DsSWJqVCAd1hkIXShFhgx2AwThhnZFwau-GXLC0xaKXIYkVF2B1vCSqFoUdN4_OuKhPo9NLsbtYLCtF9XZhpw7vSfmMHNLJ01MC1gCTW_6D3yBUxdCJwObe0yuZ-s" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 transition-opacity duration-300">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <span
+                                class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-xs font-bold mb-3 border border-white/30">Interior</span>
+                            <h3 class="text-2xl font-bold text-white mb-1">Serene Master Suite</h3>
+                            <p
+                                class="text-gray-200 text-sm line-clamp-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
+                                Creating a peaceful sanctuary with neutral tones and soft textures.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Transformation 3 (Full Width on Mobile, split on larger) -->
+                    <div
+                        class="group relative overflow-hidden rounded-2xl aspect-[16/10] md:col-span-2 reveal reveal-up delay-200">
+                        <img alt="Modern exterior facade of a luxury home at dusk with pool"
+                            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe7FRcvy8NfN7-jlSQjqxTeZQ2UoLgShyqsHlLo1hukPySpg7Ij2tLSEkGp6k1u5mXKzALUB4MloIzSkQJr0WRppY0Bn8rFOp_HUYGOs9wqM1K0z8ZeBVhoBC1yZFktMEjQqqoPN_aCmaaUW1o2uurIKm2AElV4nDmecsA5fkkWzeHkMnd5a4U7Cco1nzIZmG0HSCc0RyjOtSTFEdqHnfvbimk1rzatMa357izui6TnFnOmZ9cLuLiyAnNnMOboDi49T6MZ_q-ge4" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 transition-opacity duration-300">
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-8 w-full">
+                            <span
+                                class="inline-block px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm text-white text-xs font-bold mb-3 border border-white/30">Exterior</span>
+                            <h3 class="text-2xl font-bold text-white mb-1">Lakeside Exterior Renovation</h3>
+                            <p
+                                class="text-gray-200 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
+                                Revitalizing the outdoor living experience with modern architectural lines.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer
+            class="bg-background-off-white dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8">
+            <div class="container mx-auto px-6 lg:px-20">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                    <div class="md:col-span-1">
+                        <img src="images/logo.png" alt="KennieDecor"
+                            class="h-32 w-auto object-contain mb-6 rounded-lg reveal reveal-up">
+                        <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6">
+                            Redefining spaces with modern elegance. Your partner in creating luxurious, minimalist
+                            interiors and exteriors.
+                        </p>
+                        <div class="flex gap-4">
+                            <a class="size-8 rounded-full bg-white dark:bg-background-dark flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors shadow-sm"
+                                href="#">
+                                <span class="text-xs font-bold">IG</span>
+                            </a>
+                            <a class="size-8 rounded-full bg-white dark:bg-background-dark flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors shadow-sm"
+                                href="#">
+                                <span class="text-xs font-bold">FB</span>
+                            </a>
+                            <a class="size-8 rounded-full bg-white dark:bg-background-dark flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors shadow-sm"
+                                href="#">
+                                <span class="text-xs font-bold">LI</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-6">Services</h4>
+                        <ul class="flex flex-col gap-3 text-sm text-gray-500 dark:text-gray-400">
+                            <li><a class="hover:text-primary transition-colors" href="services.html#interior">Interior
+                                    Design</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="services.html#exterior">Exterior
+                                    Facades</a></li>
+                            <li><a class="hover:text-primary transition-colors"
+                                    href="services.html#consultation">Project Consultation</a></li>
+                            <li><a class="hover:text-primary transition-colors"
+                                    href="services.html#commercial">Commercial Spaces</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-6">Company</h4>
+                        <ul class="flex flex-col gap-3 text-sm text-gray-500 dark:text-gray-400">
+                            <li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="team.html">Our Team</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="portfolio.html">Portfolio</a></li>
+                            <li><a class="hover:text-primary transition-colors" href="careers.html">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-900 dark:text-white mb-6">Contact</h4>
+                        <ul class="flex flex-col gap-3 text-sm text-gray-500 dark:text-gray-400">
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-primary">mail</span>
+                                hello@kenniedecor.com
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-primary">call</span>
+                                +1 (555) 123-4567
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-base text-primary">location_on</span>
+                                123 Design District, NY
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="border-t border-gray-200 dark:border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-xs text-gray-400">© 2024 KennieDecor. All rights reserved.</p>
+                    <div class="flex gap-6 text-xs text-gray-400">
+                        <a class="hover:text-gray-600 dark:hover:text-gray-200" href="privacy.html">Privacy Policy</a>
+                        <a class="hover:text-gray-600 dark:hover:text-gray-200" href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Back to Top Button -->
+    <button id="back-to-top"
+        class="fixed bottom-8 right-8 z-40 p-3 rounded-full bg-primary text-white shadow-glow hover:bg-primary/90 transition-all duration-300 translate-y-20 opacity-0"
+        aria-label="Back to Top">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

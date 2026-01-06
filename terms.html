@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Terms of Service | KennieDecor</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#7014cc", "accent": "#FFD700", "background-light": "#FFFFFF", "background-off-white": "#F8F8FA", "background-dark": "#191121", "surface-dark": "#2a1f36", }, fontFamily: { "display": ["Manrope", "sans-serif"] }, borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" }, boxShadow: { 'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)', 'glow': '0 0 15px rgba(112, 20, 204, 0.3)', } }, }, }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-[#140e1b] dark:text-[#f3f0f5] font-display overflow-x-hidden antialiased flex flex-col min-h-screen">
+    <header
+        class="sticky top-0 z-50 flex items-center justify-between border-b border-gray-100 dark:border-gray-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md px-6 py-4 lg:px-20">
+        <div class="flex items-center gap-3">
+            <a href="index.html"><img src="images/logo.png" alt="KennieDecor"
+                    class="h-12 w-auto object-contain rounded-lg"></a>
+        </div>
+        <div class="hidden lg:flex items-center gap-10">
+            <a class="text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="portfolio.html">Portfolio</a>
+            <a class="text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="services.html">Services</a>
+            <a class="text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
+                href="contact.html">Contact</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <button id="theme-toggle"
+                class="p-2 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
+                aria-label="Toggle Dark Mode">
+                <span class="material-symbols-outlined dark:hidden">dark_mode</span>
+                <span class="material-symbols-outlined hidden dark:block">light_mode</span>
+            </button>
+        </div>
+    </header>
+
+    <section class="py-20 px-6 lg:px-20">
+        <div class="container mx-auto max-w-4xl prose dark:prose-invert">
+            <h1>Terms of Service</h1>
+            <p>Last updated: January 2026</p>
+            <p>Please read these Terms of Service carefully before using the KennieDecor website.</p>
+            <h2>1. Conditions of Use</h2>
+            <p>We will provide their services to you, which are subject to the conditions stated below in this document.
+                Every time you visit this website, use its services or make a purchase, you accept the following
+                conditions.</p>
+            <h2>2. Privacy Policy</h2>
+            <p>Before you continue using our website, we advise you to read our privacy policy regarding our user data
+                collection. It will help you better understand our practices.</p>
+            <h2>3. Applicable Law</h2>
+            <p>By visiting this website, you agree that the laws of our state, without regard to principles of conflict
+                laws, will govern these terms of service, or any dispute of any sort that might come between KennieDecor
+                and you.</p>
+        </div>
+    </section>
+
+    <!-- Footer Partial -->
+    <footer
+        class="bg-background-off-white dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 mt-auto">
+        <div class="container mx-auto px-6 lg:px-20">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-gray-400">© 2024 KennieDecor. All rights reserved.</p>
+                <div class="flex gap-6 text-xs text-gray-400">
+                    <a class="hover:text-gray-600 dark:hover:text-gray-200" href="privacy.html">Privacy Policy</a>
+                    <a class="hover:text-gray-600 dark:hover:text-gray-200" href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
