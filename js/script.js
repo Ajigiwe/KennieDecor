@@ -99,16 +99,16 @@ if (filterBtns.length > 0) {
             });
             // Add active to clicked
             btn.classList.add('active');
-            
+
             const filter = btn.getAttribute('data-filter');
 
             portfolioItems.forEach(item => {
                 const category = item.getAttribute('data-category');
-                
+
                 // Animate out
                 item.style.opacity = '0';
                 item.style.transform = 'scale(0.9)';
-                
+
                 setTimeout(() => {
                     if (filter === 'all' || category === filter) {
                         item.classList.remove('hidden');
@@ -123,5 +123,61 @@ if (filterBtns.length > 0) {
                 }, 300);
             });
         });
+    });
+}
+
+// --- Lightbox Logic ---
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxDesc = document.getElementById('lightbox-desc');
+const lightboxClose = document.getElementById('lightbox-close');
+
+if (lightbox) {
+    // Open Lightbox
+    portfolioItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const img = item.querySelector('img');
+            const desc = item.getAttribute('data-description');
+
+            if (img && desc) {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightboxDesc.textContent = desc;
+
+                lightbox.classList.remove('hidden');
+                // Small timeout to allow display:flex to apply before opacity transition
+                setTimeout(() => {
+                    lightbox.classList.remove('opacity-0');
+                    document.body.style.overflow = 'hidden'; // Disable scroll
+                }, 10);
+            }
+        });
+    });
+
+    // Close Lightbox Function
+    const closeLightbox = () => {
+        lightbox.classList.add('opacity-0');
+        setTimeout(() => {
+            lightbox.classList.add('hidden');
+            lightboxImg.src = ''; // Clear source
+            document.body.style.overflow = 'auto'; // Enable scroll
+        }, 300); // Match transition duration
+    };
+
+    // Event Listeners for Closing
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+
+    // Close on clicking outside image
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+            closeLightbox();
+        }
     });
 }
