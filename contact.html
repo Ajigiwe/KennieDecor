@@ -123,121 +123,69 @@
 
     <!-- Content Section -->
     <section class="py-12 px-6 lg:px-20 bg-background-light dark:bg-background-dark min-h-screen">
-        <div class="container mx-auto max-w-6xl">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+        <div class="container mx-auto max-w-4xl">
+            <div class="flex flex-col items-center gap-12">
 
-                <!-- Contact Form -->
+                <!-- Contact Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                    <!-- Visit Us -->
+                    <div
+                        class="flex flex-col items-center text-center gap-4 p-8 rounded-2xl bg-white dark:bg-surface-dark shadow-soft border border-gray-100 dark:border-gray-700 reveal reveal-up">
+                        <div class="size-14 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-2xl">location_on</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Visit Us</h3>
+                            <p class="text-gray-500 dark:text-gray-400">Ghana, Accra<br>East Legon Hills, behind Hydeson
+                                school</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Us -->
+                    <div
+                        class="flex flex-col items-center text-center gap-4 p-8 rounded-2xl bg-white dark:bg-surface-dark shadow-soft border border-gray-100 dark:border-gray-700 reveal reveal-up delay-100">
+                        <div class="size-14 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-2xl">mail</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Email Us</h3>
+                            <a href="mailto:Kenniedecor@gmail.com"
+                                class="text-gray-500 dark:text-gray-400 hover:text-primary transition-colors">Kenniedecor@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Call Us -->
+                    <div
+                        class="flex flex-col items-center text-center gap-4 p-8 rounded-2xl bg-white dark:bg-surface-dark shadow-soft border border-gray-100 dark:border-gray-700 reveal reveal-up delay-200">
+                        <div class="size-14 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-2xl">call</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-gray-900 dark:text-white mb-2">Call Us</h3>
+                            <a href="tel:+233547373249"
+                                class="text-gray-500 dark:text-gray-400 hover:text-primary transition-colors">+233 54
+                                737 3249</a>
+                            <p class="text-xs text-gray-400 mt-1">Mon-Fri, 9am - 6pm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/233547373249" target="_blank" rel="noopener noreferrer"
+                    class="reveal reveal-scale delay-300 flex items-center gap-3 h-14 px-10 rounded-full bg-[#25D366] text-white text-base font-bold shadow-lg hover:bg-[#20bd5a] hover:scale-105 transition-all duration-300">
+                    <span class="material-symbols-outlined">chat</span>
+                    <span>Chat on WhatsApp</span>
+                </a>
+
+                <!-- Map -->
                 <div
-                    class="bg-white dark:bg-surface-dark p-8 md:p-10 rounded-2xl shadow-soft border border-gray-100 dark:border-gray-700 reveal reveal-left">
-                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send us a Message</h2>
-                    <form action="#" class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="name"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Name</label>
-                                <input type="text" id="name"
-                                    class="w-full rounded-xl border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
-                                    placeholder="Your Name">
-                            </div>
-                            <div>
-                                <label for="email"
-                                    class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email</label>
-                                <input type="email" id="email"
-                                    class="w-full rounded-xl border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
-                                    placeholder="john@example.com">
-                            </div>
-                        </div>
-                        <div>
-                            <label for="phone"
-                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Phone</label>
-                            <input type="tel" id="phone"
-                                class="w-full rounded-xl border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
-                                placeholder="(555) 123-4567">
-                        </div>
-                        <div>
-                            <label for="service"
-                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Interested
-                                In</label>
-                            <select id="service"
-                                class="w-full rounded-xl border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary">
-                                <option>Interior Styling</option>
-                                <option>Exterior Facades</option>
-                                <option>Commercial Projects</option>
-                                <option>Consultation</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label for="message"
-                                class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
-                            <textarea id="message" rows="4"
-                                class="w-full rounded-xl border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-background-dark text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
-                                placeholder="Tell us about your project..."></textarea>
-                        </div>
-                        <button type="submit"
-                            class="w-full h-12 flex items-center justify-center rounded-xl bg-primary text-white font-bold text-lg hover:bg-primary/90 transition-all shadow-glow">
-                            Send Request
-                        </button>
-                    </form>
+                    class="w-full h-96 rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 shadow-soft border border-gray-100 dark:border-gray-700 reveal reveal-up delay-400">
+                    <iframe
+                        src="https://maps.google.com/maps?q=Hydeson%20School%2C%20East%20Legon%20Hills%2C%20Accra&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 
-                <!-- Info and Map -->
-                <div class="flex flex-col gap-8 reveal reveal-right delay-200">
-                    <!-- Contact Information -->
-                    <div>
-                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Information</h2>
-                        <div class="flex flex-col gap-6">
-                            <div
-                                class="flex items-start gap-4 p-4 rounded-xl bg-background-off-white dark:bg-surface-dark/50">
-                                <div
-                                    class="size-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                                    <span class="material-symbols-outlined">location_on</span>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white">Visit Us</h4>
-                                    <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">Ghana, East Legon
-                                        Hills<br>Accra, behind Hydeson school</p>
-                                </div>
-                            </div>
-
-                            <div
-                                class="flex items-start gap-4 p-4 rounded-xl bg-background-off-white dark:bg-surface-dark/50">
-                                <div
-                                    class="size-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                                    <span class="material-symbols-outlined">mail</span>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white">Email Us</h4>
-                                    <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">
-                                        Kenniedecor@gmail.com</p>
-                                </div>
-                            </div>
-
-                            <div
-                                class="flex items-start gap-4 p-4 rounded-xl bg-background-off-white dark:bg-surface-dark/50">
-                                <div
-                                    class="size-10 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
-                                    <span class="material-symbols-outlined">call</span>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white">Call Us</h4>
-                                    <p class="text-gray-500 dark:text-gray-400 text-sm mt-1">+233 54 737
-                                        3249<br>Mon-Fri, 9am - 6pm EST</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Map Placeholder -->
-                    <div class="w-full h-64 rounded-2xl overflow-hidden bg-gray-200 dark:bg-gray-800 relative">
-                        <iframe
-                            src="https://maps.google.com/maps?q=Hydeson%20School%2C%20East%20Legon%20Hills%2C%20Accra&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-
-                </div>
             </div>
-
         </div>
     </section>
 
