@@ -24,8 +24,9 @@
     <header
         class="sticky top-0 z-50 flex items-center justify-between border-b border-gray-100 dark:border-gray-800 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md px-6 py-4 lg:px-20">
         <div class="flex items-center gap-3">
-            <a href="index.html"><img src="images/logo.png" alt="KennieDecor"
-                    class="h-12 w-auto object-contain rounded-lg"></a>
+            <a href="index.html">
+                <img src="images/logo.png" alt="KennieDecor" class="h-12 w-auto object-contain rounded-lg">
+            </a>
         </div>
         <div class="hidden lg:flex items-center gap-10">
             <a class="text-sm font-semibold text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
@@ -44,24 +45,74 @@
                 <span class="material-symbols-outlined dark:hidden">dark_mode</span>
                 <span class="material-symbols-outlined hidden dark:block">light_mode</span>
             </button>
+            <button
+                class="hidden sm:flex h-10 px-6 items-center justify-center rounded-xl border border-primary text-primary dark:text-primary font-bold text-sm hover:bg-primary hover:text-white transition-all duration-300"
+                onclick="window.location.href='contact.html'">
+                Get a Quote
+            </button>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-600 dark:text-gray-300" aria-label="Open Menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
         </div>
     </header>
 
-    <section class="py-20 px-6 lg:px-20">
-        <div class="container mx-auto max-w-4xl prose dark:prose-invert">
-            <h1>Privacy Policy</h1>
-            <p>Last updated: January 2026</p>
-            <p>At KennieDecor, we respect your privacy and are committed to protecting your personal data. This privacy
-                policy will inform you as to how we look after your personal data when you visit our website.</p>
-            <h2>1. Information We Collect</h2>
-            <p>We may collect, use, store and transfer different kinds of personal data about you which we have grouped
-                together follows: Identity Data, Contact Data, Technical Data, and Usage Data.</p>
-            <h2>2. How We Use Your Data</h2>
-            <p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal
-                data in the following circumstances: Where we need to perform the contract we are about to enter into or
-                have entered into with you.</p>
-            <h2>3. Contact Us</h2>
-            <p>If you have any questions about this privacy policy, please contact us at Kenniedecor@gmail.com.</p>
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 z-50 bg-white/95 dark:bg-background-dark/95 backdrop-blur-xl transform translate-x-full transition-transform duration-300 lg:hidden flex flex-col justify-center items-center gap-8">
+        <button id="close-menu-btn"
+            class="absolute top-6 right-6 p-2 text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+            aria-label="Close Menu">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+        <nav class="flex flex-col items-center gap-6 text-xl font-bold">
+            <a href="index.html"
+                class="mobile-link text-gray-800 dark:text-gray-100 hover:text-primary transition-colors">Home</a>
+            <a href="portfolio.html"
+                class="mobile-link text-gray-800 dark:text-gray-100 hover:text-primary transition-colors">Portfolio</a>
+            <a href="services.html"
+                class="mobile-link text-gray-800 dark:text-gray-100 hover:text-primary transition-colors">Services</a>
+            <a href="contact.html"
+                class="mobile-link text-gray-800 dark:text-gray-100 hover:text-primary transition-colors">Contact</a>
+        </nav>
+        <button
+            class="flex h-12 px-8 items-center justify-center rounded-xl bg-primary text-white font-bold text-lg hover:bg-primary/90 transition-all shadow-glow"
+            onclick="window.location.href='contact.html'; toggleMenu()">
+            Get a Quote
+        </button>
+    </div>
+
+    <section class="relative pt-32 pb-20 px-6 lg:px-20 bg-background-off-white dark:bg-surface-dark min-h-[60vh]">
+        <!-- Header -->
+        <div class="container mx-auto max-w-4xl text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 reveal reveal-up">Privacy
+                Policy</h1>
+            <p class="text-gray-500 dark:text-gray-400 reveal reveal-up delay-100">Last updated: January 2026</p>
+        </div>
+
+        <!-- Content Card -->
+        <div class="container mx-auto max-w-4xl">
+            <div
+                class="bg-white dark:bg-background-dark p-8 md:p-12 rounded-2xl shadow-soft border border-gray-100 dark:border-gray-700 reveal reveal-up delay-200">
+                <div
+                    class="prose dark:prose-invert max-w-none prose-headings:font-bold prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-p:text-gray-600 dark:prose-p:text-gray-300 prose-a:text-primary hover:prose-a:text-primary/80 transition-colors">
+                    <p class="lead text-lg">At KennieDecor, we respect your privacy and are committed to protecting your
+                        personal data. This privacy policy will inform you as to how we look after your personal data
+                        when you visit our website.</p>
+
+                    <h2>1. Information We Collect</h2>
+                    <p>We may collect, use, store and transfer different kinds of personal data about you which we have
+                        grouped together follows: Identity Data, Contact Data, Technical Data, and Usage Data.</p>
+
+                    <h2>2. How We Use Your Data</h2>
+                    <p>We will only use your personal data when the law allows us to. Most commonly, we will use your
+                        personal data in the following circumstances: Where we need to perform the contract we are about
+                        to enter into or have entered into with you.</p>
+
+                    <h2>3. Contact Us</h2>
+                    <p>If you have any questions about this privacy policy, please contact us at <a
+                            href="mailto:Kenniedecor@gmail.com">Kenniedecor@gmail.com</a>.</p>
+                </div>
+            </div>
         </div>
     </section>
 

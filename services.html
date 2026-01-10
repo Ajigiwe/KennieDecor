@@ -96,6 +96,8 @@
             <span class="material-symbols-outlined text-3xl">close</span>
         </button>
         <nav class="flex flex-col items-center gap-6 text-xl font-bold">
+            <a href="index.html"
+                class="mobile-link text-gray-800 dark:text-gray-100 hover:text-primary transition-colors">Home</a>
             <a href="portfolio.html"
                 class="mobile-link text-gray-800 dark:text-gray-100 hover:text-primary transition-colors">Portfolio</a>
             <a href="services.html" class="mobile-link text-primary dark:text-primary transition-colors">Services</a>
@@ -125,18 +127,21 @@
     <section class="py-20 px-6 lg:px-20 bg-background-light dark:bg-background-dark">
         <div class="container mx-auto max-w-6xl space-y-24">
 
-            <!-- Interior -->
+            <!-- Interior Design -->
             <div id="interior" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center reveal reveal-up">
                 <div class="order-2 md:order-1">
                     <div class="size-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
                         <span class="material-symbols-outlined text-4xl">chair</span>
                     </div>
-                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Interior Styling</h2>
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Interior Design</h2>
                     <p class="text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
-                        Our interior styling service focuses on creating harmonious environments. We select the perfect
-                        furniture, lighting, and textiles to complement your space's architecture. Whether you need a
-                        single room refresh or a whole-home makeover, our team ensures every detail aligns with your
-                        personal aesthetic.
+                        We believe that your home should be the best place for you to be. It is not just about making
+                        things look nice, but about making them feel right for you and your family. Our team takes the
+                        time to listen to what you want and need. We look at how you use your rooms every day. We help
+                        you pick out the best colors that make you happy, the furniture that fits perfectly, and the
+                        decorations that show off who you are. We handle all the hard work of planning where everything
+                        goes so you do not have to worry. Our goal is to turn your house into a home that is
+                        comfortable, useful, and beautiful, a place where you can relax and enjoy your life.
                     </p>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
@@ -144,11 +149,11 @@
                             Layout
                         </li>
                         <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                            <span class="material-symbols-outlined text-primary">check_circle</span> Furniture & Decor
-                            Sourcing
+                            <span class="material-symbols-outlined text-primary">check_circle</span> Color Consultation
                         </li>
                         <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                            <span class="material-symbols-outlined text-primary">check_circle</span> Color Consultation
+                            <span class="material-symbols-outlined text-primary">check_circle</span> Furniture & Decor
+                            Sourcing
                         </li>
                     </ul>
                     <a href="contact.html" class="text-primary font-bold hover:underline">Get a Quote &rarr;</a>
@@ -156,6 +161,44 @@
                 <div class="order-1 md:order-2">
                     <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=1000"
                         alt="Interior Design" class="rounded-2xl shadow-lg w-full h-80 object-cover">
+                </div>
+            </div>
+
+            <!-- 3D Design -->
+            <div id="3d-design" class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center reveal reveal-up">
+                <div class="md:order-1">
+                    <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&q=80&w=1000"
+                        alt="3D Design & Visualization" class="rounded-2xl shadow-lg w-full h-80 object-cover">
+                </div>
+                <div class="md:order-2">
+                    <div class="size-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-4xl">view_in_ar</span>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">3D Design & Visualization</h2>
+                    <p class="text-gray-500 dark:text-gray-400 leading-relaxed mb-6">
+                        Have you ever worried about buying furniture or painting a wall because you are not sure how it
+                        will look? Our 3D design service solves that problem for you. Before we buy a single item or
+                        start any work, we create precise pictures of your new room on the computer. This lets you see
+                        exactly what your space will look like when it is finished. You can see the colors, the lights,
+                        and the furniture as if you were standing there. This helps you make sure you love everything
+                        before you spend any money on real changes. It is the best way to avoid mistakes and get exactly
+                        the home you prefer.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                            <span class="material-symbols-outlined text-primary">check_circle</span> Photorealistic
+                            Rendering
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                            <span class="material-symbols-outlined text-primary">check_circle</span> Virtual
+                            Walkthroughs
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 dark:text-gray-300">
+                            <span class="material-symbols-outlined text-primary">check_circle</span> Material & Lighting
+                            Studies
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="text-primary font-bold hover:underline">Get a Quote &rarr;</a>
                 </div>
             </div>
 
@@ -256,6 +299,8 @@
                     <ul class="flex flex-col gap-3 text-sm text-gray-500 dark:text-gray-400">
                         <li><a class="hover:text-primary transition-colors" href="services.html#interior">Interior
                                 Design</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="services.html#3d-design">3D Design</a>
+                        </li>
                         <li><a class="hover:text-primary transition-colors" href="services.html#exterior">Exterior
                                 Facades</a></li>
                         <li><a class="hover:text-primary transition-colors" href="services.html#consultation">Project
