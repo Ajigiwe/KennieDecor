@@ -85,6 +85,10 @@ body {
     transform: scale(0.9);
 }
 
+.fade-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
 /* Staggered Delays */
 .delay-100 { transition-delay: 100ms; }
 .delay-200 { transition-delay: 200ms; }
